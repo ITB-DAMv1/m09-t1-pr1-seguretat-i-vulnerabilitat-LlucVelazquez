@@ -50,7 +50,7 @@ Mesures i tecniques per prevencio:
 
   3. Realitzeu un inventari continu de les versions dels components al client i al servidor (per exemple, frameworks, biblioteques) i les seves dependències utilitzant eines com: versions, OWASP Dependency Check, retire.js, etc.
 
-## **2. Obre el següent enllaç (sql inseckten) i realitza un mínim de 7 nivells fent servir tècniques d’injecció SQL. **
+## **2. Obre el següent enllaç (sql inseckten) i realitza un mínim de 7 nivells fent servir tècniques d’injecció SQL.**
 
   1. level 1:
      ```
