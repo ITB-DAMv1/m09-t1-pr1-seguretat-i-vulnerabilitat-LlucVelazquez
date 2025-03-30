@@ -176,6 +176,61 @@ Aquestes polítiques asseguren el compliment del RGPD i altres normatives aplica
 
 ## 4. En el control d’accessos, existeixen mètodes d’autenticació basats en tokens. Defineix l’autenticació basada en tokens. Quins tipus hi ha? Com funciona mitjançant la web? Cerca llibreries .Net que ens poden ajudar a implementar autenticació amb tokens.
 
+Definició de l’autenticació basada en tokens
+L’autenticació basada en tokens és un mètode de seguretat que verifica la identitat d’un usuari mitjançant l’ús de tokens encriptats. Quan un usuari inicia sessió correctament, el servidor genera un token únic que permet accedir a recursos protegits sense haver d’introduir les credencials repetidament. Aquest token es transmet entre el client i el servidor per autenticar les sol·licituds durant un període limitat de temps.
 
+Tipus de tokens
+Hi ha diferents tipus de tokens utilitzats en l’autenticació:
+
+Tokens d’accés: Utilitzats per accedir a recursos protegits. Són opacs i segueixen el framework OAuth 2.0.
+
+Tokens de refresc: Permeten obtenir nous tokens d’accés sense tornar a iniciar sessió. Tenen una durada més llarga.
+
+Tokens JWT (JSON Web Tokens): Són compactes i contenen informació codificada sobre l’usuari, com ara identificadors i afirmacions (claims). Estan signats digitalment per garantir-ne la integritat.
+
+Tokens físics o "hard tokens": Dispositius físics que generen codis únics per a l’autenticació.
+
+Soft tokens: Aplicacions o mètodes digitals que generen els mateixos codis únics que els hard tokens.
+
+Funcionament de l’autenticació basada en tokens a la web
+El procés general inclou els següents passos:
+
+Inici de sessió: L’usuari introdueix les seves credencials (nom d’usuari i contrasenya).
+
+Verificació: El servidor comprova si les credencials són correctes.
+
+Generació del token: Si les credencials són vàlides, el servidor emet un token únic signat.
+
+Emmagatzematge del token: El client guarda el token (per exemple, al localStorage o cookies del navegador).
+
+Ús del token: Per a cada sol·licitud futura, el client inclou el token en els encapçalaments HTTP (normalment com a "Authorization: Bearer [token]").
+
+Validació del token: El servidor verifica la validesa del token abans de concedir accés al recurs sol·licitat.
+
+Llibreries .NET per implementar autenticació amb tokens
+A continuació es presenten algunes llibreries útils per implementar autenticació basada en tokens amb .NET:
+
+Microsoft.Identity.Client (MSAL): Llibreria oficial per treballar amb autenticació OAuth 2.0 i OpenID Connect, utilitzada per obtenir tokens d’accés i refresc.
+
+System.IdentityModel.Tokens.Jwt: Permet treballar amb JWT, incloent-hi la creació, validació i manipulació de tokens JWT.
+
+IdentityServer4: Framework per implementar autenticació i autorització basades en OAuth 2.0 i OpenID Connect en aplicacions .NET.
+
+ASP.NET Core Authentication Middleware: Proporciona suport integrat per a autenticació basada en JWT i altres esquemes.
+
+## **5. Crea un projecte de consola amb un menú amb tres opcions:**
+
+
+
+
+## **6. Indica les referències que has consultat, seguint el següent format:**
+
+14 contribuidors - (25/10/2023) - Control de acceso basado en rol para desarrolladores de aplicaciones - Learn Microsoft - [link](https://learn.microsoft.com/es-es/entra/identity-platform/custom-rbac-for-developers)
+
+3 contribuidors - (17/05/2024) - Autenticación de API basada en tokens - Learn Microsoft - [link](https://learn.microsoft.com/es-es/xandr/digital-platform-api/token-based-api-authentication)
+
+Universitat Illes Balears - (no hi ha data) - Bones pràctiques Contrasenyes - Seguretat UIB - [link](https://seguretat.uib.cat/conscienciacio/bones-practiques/contrasenyes/)
+
+Keeper - (no hi ha data) - ¿Qué es la autenticación basada en tokens? - Keeper - [link](https://www.keepersecurity.com/es_ES/resources/glossary/what-is-token-based-authentication/)
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/S9WTUTwx)
