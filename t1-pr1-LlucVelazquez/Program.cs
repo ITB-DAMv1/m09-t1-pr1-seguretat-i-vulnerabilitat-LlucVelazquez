@@ -39,18 +39,15 @@ namespace t1_pr1_LlucVelazquez
             {
                 using (RSA rsa = RSA.Create())
                 {
-                    // Generar claus pública i privada
                     RSAParameters publicKey = rsa.ExportParameters(false);
                     RSAParameters privateKey = rsa.ExportParameters(true);
 
                     Console.Write("Introdueix un text per encriptar: ");
                     string inputText = Console.ReadLine();
 
-                    // Encriptació amb clau pública
                     byte[] encryptedData = rsa.Encrypt(Encoding.UTF8.GetBytes(inputText), RSAEncryptionPadding.Pkcs1);
                     Console.WriteLine($"Text encriptat: {Convert.ToBase64String(encryptedData)}");
 
-                    // Desencriptació amb clau privada
                     byte[] decryptedData = rsa.Decrypt(encryptedData, RSAEncryptionPadding.Pkcs1);
                     Console.WriteLine($"Text desencriptat: {Encoding.UTF8.GetString(decryptedData)}");
                 }
