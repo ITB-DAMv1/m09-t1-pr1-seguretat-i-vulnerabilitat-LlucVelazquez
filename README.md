@@ -50,7 +50,7 @@ Mesures i tecniques per prevencio:
 
   3. Realitzeu un inventari continu de les versions dels components al client i al servidor (per exemple, frameworks, biblioteques) i les seves dependències utilitzant eines com: versions, OWASP Dependency Check, retire.js, etc.
 
-## **2. Obre el següent enllaç (sql inseckten) i realitza un mínim de 7 nivells fent servir tècniques d’injecció SQL. 
+## **2. Obre el següent enllaç (sql inseckten) i realitza un mínim de 7 nivells fent servir tècniques d’injecció SQL. **
 
   1. level 1:
      ```
@@ -58,6 +58,9 @@ Mesures i tecniques per prevencio:
      FROM users 
      WHERE username ='jane' --' AND password ='d41d8cd98f00b204e9800998ecf8427e';
      ```
-     
+  2. level 2:
+     ```
+
+     ```
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/S9WTUTwx)
