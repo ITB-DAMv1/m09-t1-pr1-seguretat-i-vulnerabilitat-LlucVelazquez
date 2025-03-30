@@ -237,4 +237,6 @@ Microsoft - (no hi ha data) - RSAPKCS1SignatureDeformatter.VerifySignature(Byte[
 
 Hector de leon - (29/12/2017) - Función para encriptar en sha256 en C# .Net - HdeLeon.net - [link](https://hdeleon.net/funcion-para-encriptar-en-sha256-en-c-net/)
 
+Microsoft - (no hi ha data) - SHA256 Clase - Learn Mircosoft - [link](https://learn.microsoft.com/es-es/dotnet/api/system.security.cryptography.sha256?view=net-8.0)
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/S9WTUTwx)
