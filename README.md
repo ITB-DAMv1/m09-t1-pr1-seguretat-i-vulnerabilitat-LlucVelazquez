@@ -93,5 +93,89 @@ Mesures i tecniques per prevencio:
      FROM shoes 
      WHERE brand='' UNION SELECT name, firstname, email, salary, employed_since FROM staff --';
      ```
+## **3.L’empresa a la qual treballes desenvoluparà una aplicació web de venda d’obres d’art. Els artistes registren les seves obres amb fotografies, títol, descripció i preu.  Els clients poden comprar les obres i poden escriure ressenyes públiques dels artistes a qui han comprat. Tant clients com artistes han d’estar registrats. L’aplicació guarda nom, cognoms, adreça completa, dni i telèfon. En el cas dels artistes guarda les dades bancaries per fer els pagaments. Hi ha un tipus d’usuari Acount Manager que s’encarrega de verificar als nous artistes. Un cop aprovats poden pública i vendre les seves obres.**
+
+Definició del control d’accés
+Per implementar un sistema segur, es defineixen els següents rols i permisos:
+
+Client:
+
+Accés: Pot veure obres d'art, comprar-les i escriure ressenyes públiques sobre els artistes.
+
+Restriccions: No pot accedir a dades sensibles d'altres usuaris ni gestionar obres d'art.
+
+Artista:
+
+Accés: Pot registrar-se, pujar obres amb fotografies, títols, descripció i preus. També pot consultar les seves vendes i ressenyes.
+
+Restriccions: No pot accedir a dades personals o bancàries d'altres usuaris.
+
+Account Manager:
+
+Accés: Pot verificar nous artistes i aprovar-los perquè puguin publicar i vendre obres.
+
+Restriccions: No pot modificar dades bancàries dels artistes ni accedir a dades de clients.
+
+Administrador del sistema:
+
+Accés: Control total sobre l'aplicació, incloent-hi la gestió de dades personals i bancàries, així com la configuració de permisos.
+
+Restriccions: Cap (però s'ha de limitar el nombre d'usuaris amb aquest rol).
+
+Aquest model de control d'accés es basa en el principi de mínim privilegi, assegurant que cada usuari només tingui accés a les dades necessàries per a les seves funcions.
+
+Definició de la política de contrasenyes
+Les polítiques de contrasenyes es defineixen segons els següents criteris:
+
+Normes generals
+Longitud mínima de 12 caràcters.
+
+Ha d'incloure majúscules, minúscules, números i símbols especials.
+
+No pot contenir informació personal com noms, dates o paraules comunes.
+
+Canvi obligatori cada 90 dies.
+
+No reutilitzar cap de les últimes 5 contrasenyes.
+
+Diferenciació segons perfil
+Clients i artistes: Polítiques estàndard per garantir seguretat bàsica.
+
+Account Managers i Administradors del sistema: Polítiques més estrictes, incloent-hi autenticació multifactor (MFA) per accedir al sistema.
+
+Aquestes mesures garanteixen que els comptes siguin menys vulnerables a atacs com el phishing o la força bruta.
+
+Avaluació de la informació
+Valor de les dades
+Les dades gestionades tenen un alt valor per la seva sensibilitat:
+
+Dades personals (nom, cognoms, DNI, adreça completa): Necessàries per complir amb la normativa legal.
+
+Dades bancàries dels artistes: Crítiques per processar pagaments.
+
+Historial de compres i ressenyes: Dades comercials valuoses.
+
+Tractament i encriptació
+Per protegir aquestes dades:
+
+Encriptació en repòs i en trànsit:
+
+Utilitzar algoritmes com AES-256 per dades sensibles (dades personals i bancàries).
+
+HTTPS per assegurar la transmissió segura.
+
+Pseudonimització:
+
+Separar identificadors personals de dades operatives sempre que sigui possible.
+
+Còpies de seguretat xifrades:
+
+Per evitar pèrdues en cas d'atacs o fallades tècniques.
+
+Aquestes polítiques asseguren el compliment del RGPD i altres normatives aplicables.
+
+## 4. En el control d’accessos, existeixen mètodes d’autenticació basats en tokens. Defineix l’autenticació basada en tokens. Quins tipus hi ha? Com funciona mitjançant la web? Cerca llibreries .Net que ens poden ajudar a implementar autenticació amb tokens.
+
+
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/S9WTUTwx)
