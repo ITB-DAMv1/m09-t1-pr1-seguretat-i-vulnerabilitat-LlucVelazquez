@@ -233,4 +233,8 @@ Universitat Illes Balears - (no hi ha data) - Bones pràctiques Contrasenyes - S
 
 Keeper - (no hi ha data) - ¿Qué es la autenticación basada en tokens? - Keeper - [link](https://www.keepersecurity.com/es_ES/resources/glossary/what-is-token-based-authentication/)
 
+Microsoft - (no hi ha data) - RSAPKCS1SignatureDeformatter.VerifySignature(Byte[], Byte[]) Método - Learn Microsoft - [link](https://learn.microsoft.com/es-es/dotnet/api/system.security.cryptography.rsapkcs1signaturedeformatter.verifysignature?view=net-9.0)
+
+Hector de leon - (29/12/2017) - Función para encriptar en sha256 en C# .Net - HdeLeon.net - [link](https://hdeleon.net/funcion-para-encriptar-en-sha256-en-c-net/)
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/S9WTUTwx)
