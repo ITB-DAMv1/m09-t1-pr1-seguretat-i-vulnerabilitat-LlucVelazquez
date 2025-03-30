@@ -5,9 +5,14 @@
 **1 - A07:2021 – Fallas de Identificación y Autenticación**
 
 Son falles en la confirmacio de la identitat, la autenticacio i en la gestio de sesions dels usuaris.
+
 Permet atacs automatitzats com la reutilització de credencials conegudes, on l'atacant té una llista de parells d'usuari i contrasenya vàlids. 
+
 Exposa l'identificador de sessió a la URL.
+
 Emmagatzema les contrasenyes en text clar, xifrades o utilitzant funcions de hash febles.
+
+
 
 Mesures per evitar-les:
 
@@ -16,6 +21,8 @@ Mesures per evitar-les:
 2. Quan sigui possible, implementeu l'autenticació multifactor per evitar atacs automatitzats de reutilització de credencials conegudes, força bruta i reús de credencials robades.
 
 3. Assegureu-vos que el registre, la recuperació de les credencials i l'ús d'APIs no permeten els atacs d'enumeració d'usuaris mitjançant la utilització dels mateixos missatges genèrics a totes les sortides.
+
+
 
 **2 - A10:2021 – Falsificación de Solicitudes del Lado del Servidor (SSRF)**
 
