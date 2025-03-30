@@ -14,13 +14,11 @@ Emmagatzema les contrasenyes en text clar, xifrades o utilitzant funcions de has
 
 Mesures per evitar-les:
 
-  1.Implementeu un control contra contrasenyes febles, tal com verificar que una nova contrasenya o la utilitzada en el canvi de contrasenya no estigui inclosa a la llista de les 10,000 pitjors contrasenyes.
+  1. Implementeu un control contra contrasenyes febles, tal com verificar que una nova contrasenya o la utilitzada en el canvi de contrasenya no estigui inclosa a la llista de les 10,000 pitjors contrasenyes.
 
   2. Quan sigui possible, implementeu l'autenticació multifactor per evitar atacs automatitzats de reutilització de credencials conegudes, força bruta i reús de credencials robades.
 
   3. Assegureu-vos que el registre, la recuperació de les credencials i l'ús d'APIs no permeten els atacs d'enumeració d'usuaris mitjançant la utilització dels mateixos missatges genèrics a totes les sortides.
-
-
 
 **2 - A10:2021 – Falsificación de Solicitudes del Lado del Servidor (SSRF)**
 
